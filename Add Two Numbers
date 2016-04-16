@@ -8,10 +8,12 @@
  */
 public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+            // 改进：能否不要再创建一个新的List
+            // 可以把结果加到l1上。
             
             if (l1 != null & l2 != null) {
-                int sum = (l1.val +l2.val)% 10;
-                int remainder = (l1.val +l2.val) / 10;
+                int sum = (l1.val + l2.val) % 10;
+                int remainder = (l1.val + l2.val) / 10;
                 ListNode list = new ListNode(sum);
                 ListNode temp = list;
                 ListNode temp1 = l1;
