@@ -1,3 +1,8 @@
+// 同样是复杂度的问题。
+// 你现在的解法，复杂度是O(n^2)
+// 能否把算法复杂度降到O(n)?
+// 提示：使用map和sliding window。
+
 public class Solution {
     public int lengthOfLongestSubstring(String s) {
         if(s.length()<=1){
