@@ -1,3 +1,10 @@
+// 你有空上网查一下算法复杂度理论。
+// 由于你的程序有两个for loop，所以算法的复杂度是O(n^2)
+// 这个复杂度太高了（复杂度越高，程序运行时间就越长）
+// 根据 no free lunch 理论，我们经常用空间复杂度来交换时间复杂度。
+// 你能否增加一个存储空间，但是把运算复杂度降低到O(n)，也就是只用一个for loop
+// 提示：使用map.
+
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] ans = new int[2];
